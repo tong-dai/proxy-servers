@@ -1,6 +1,48 @@
-package client
+package main
+
+import (
+	// "net/http"
+	"bufio"
+	"fmt"
+	"os"
+)
+
+// type EnrollmentRequest struct {
+// 	StudentID	int			// student's 9-digit id
+// 	ClassNumber	int			// class number
+// }
+
+// func sendEnrollRequest(stuentID []byte, classNumber []byte) bool {
+	
+// }
 
 
-func Enroll(student int, class int) bool {
+// Validate student ID and class number input
+func isValidInput(input []byte, expectedLength int) bool {
+	if (len(input) > 0) { input = input[:len(input)-1] }
+
+	if (len(input) != expectedLength) { return false }
+
+	for _, b := range input { if b > 57 || b < 48 { return false } }
 	return true
+}
+
+// Runs the client
+func main() {
+	reader := bufio.NewReader(os.Stdin)
+
+	fmt.Println("Enter Student ID: ")
+	studentID, _ := reader.ReadBytes('\n')
+	if (!isValidInput(studentID, 9)) {
+		fmt.Println("Please enter your 9-digit student ID correctly.")
+		return
+	}
+
+	fmt.Println("Enter Class Number: ")
+	classNumber, _ := reader.ReadBytes('\n')
+	if (!isValidInput(classNumber, 5)) {
+		fmt.Println("Please enter the 5-digit class number correctly.")
+		return
+	}
+
 }

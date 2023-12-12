@@ -1,0 +1,3 @@
+Server Sent Events: https://gustavocd.dev/posts/server-sent-events-in-go/
+
+Read From Standard Input: https://www.educative.io/answers/how-to-read-standard-input-from-console-in-go
