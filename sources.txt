@@ -2,3 +2,4 @@ Server Sent Events: https://gustavocd.dev/posts/server-sent-events-in-go/
 
 Read From Standard Input: https://www.educative.io/answers/how-to-read-standard-input-from-console-in-go
 https://dev.to/bmf_san/implement-a-load-balancer-in-golang-8gj
+https://thedevelopercafe.com/articles/server-sent-events-in-go-595ae2740c7a
