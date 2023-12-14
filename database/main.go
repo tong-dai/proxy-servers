@@ -58,8 +58,8 @@ func createDB(numClasses int) *DB {
 
 func main() {
 	// TODO add code that fills the db with the requisite classes
-	// createDB(5)
-	// createServer(4, 5)
+	// db := createDB(5)
+	// server := createServer(4, 5)
 	fmt.Println("Server running")
 
 	http.HandleFunc("/enroll", func(w http.ResponseWriter, r *http.Request) {
