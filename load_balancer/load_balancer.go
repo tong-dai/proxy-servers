@@ -1,23 +1,51 @@
-package load_balancer
+package main
 
 import (
 	"fmt"
+	"net/http"
+	"net/http/httputil"
+	"net/url"
 	"sync"
 )
 
 type LB struct {
-	Caches []*Cache // represents the different caches
-	Index int // represents the index to which to send the incoming request
-	sync.Mutex
-
-}
-func (lb *LB) SendReqToCache(student int, class int) (bool, int) {
-	lb.Lock()
-	lb.Caches[0] = new(Cache)
-	fmt.Println(lb.Index)
-	lb.Index++
-	lb.Unlock()
-	// returning the cache to which the request was sent
-	return true, lb.Index-1
+	Servers		[]*Server
+	Current		int
 }
 
+type Server struct {
+	ServerURL	string
+	mu			sync.Mutex
+}
+
+func (lb *LB) getNextServer() *Server {
+	lb.Current = (lb.Current + 1) % len(lb.Servers)
+    return lb.Servers[lb.Current]
+}
+
+func (lb *LB) handleRequest(w http.ResponseWriter, r *http.Request) {
+
+	server := lb.getNextServer()
+
+	serverURL, err := url.Parse(server.ServerURL)
+	if err != nil {
+		fmt.Println("ERROR")
+		return
+	}
+
+	proxy := httputil.NewSingleHostReverseProxy(serverURL)
+	proxy.ServeHTTP(w, r)
+}
+
+func main() {
+	lb := LB{
+        Servers: []*Server{
+            {ServerURL: "http://localhost:7777"},
+            {ServerURL: "http://localhost:8888"},
+        },
+    }
+
+    http.HandleFunc("/", lb.handleRequest) 
+    fmt.Println("Server is running on port 8080...")
+    http.ListenAndServe(":8080", nil)
+}
