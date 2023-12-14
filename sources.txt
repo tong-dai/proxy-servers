@@ -7,3 +7,6 @@ https://thedevelopercafe.com/articles/server-sent-events-in-go-595ae2740c7a
 
 https://dev.to/bmf_san/implement-a-load-balancer-in-golang-8gj#:~:text=Implementation%20of%20round%20robin&text=All%20you%20have%20to%20do,server%20is%20alive%20or%20dead.&text=The%20reason%20for%20using%20sync,by%20multiple%20Goroutines%20accessing%20variables.
 https://stackoverflow.com/questions/30652577/go-doing-a-get-request-and-building-the-querystring
+
+
+https://stackoverflow.com/questions/40573837/how-to-run-multiple-go-lang-http-servers-at-the-same-time-and-test-them-using-co
