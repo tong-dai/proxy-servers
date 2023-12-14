@@ -21,7 +21,7 @@ type Server struct {
 func (lb *LB) getNextServer() *Server {
 	lb.mu.Lock()
 	defer lb.mu.Unlock()
-	
+
 	lb.Current = (lb.Current + 1) % len(lb.Servers)
     return lb.Servers[lb.Current]
 }
@@ -45,7 +45,7 @@ func main() {
         Servers: []*Server{
             {ServerURL: "http://localhost:7777"},
             {ServerURL: "http://localhost:8888"},
-			{ServerURL: "http://localhost:9999"},
+			// {ServerURL: "http://localhost:9999"},
         },
     }
 

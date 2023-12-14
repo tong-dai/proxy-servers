@@ -23,8 +23,7 @@ func main() {
         enrollmentInfo := processQuery(r)
 
         fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
-        fmt.Printf("Request received on port 8888")
-        fmt.Fprintf(w, "Hello from server on port 8888")
+        fmt.Println("Request received on port 8888")
     })
 
     http.ListenAndServe(":8888", nil)
