@@ -1,0 +1,10 @@
+
+cat targets.txt | vegeta attack -rate=50 -duration=2s -workers=50 | vegeta report
+50 students, 80 classes, capacity 3, 4 classes per student
+Requests      [total, rate, throughput]         100, 50.51, 50.48
+Duration      [total, attack, wait]             1.981s, 1.98s, 1.39ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  738.709µs, 1.483ms, 1.321ms, 1.861ms, 2.148ms, 7.93ms, 12.898ms
+Bytes In      [total, mean]                     3292, 32.92
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:100  
