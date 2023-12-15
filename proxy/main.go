@@ -78,6 +78,8 @@ func handlerServer1(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	
 	fmt.Println("Running on Port :7777")
+	message := "byE BYE BYE"
+	w.Write([]byte(message))
 }
 
 func handlerServer2(w http.ResponseWriter, r *http.Request) {
@@ -91,6 +93,8 @@ func handlerServer2(w http.ResponseWriter, r *http.Request) {
 	// }
 	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :8888")
+	message := "byE BYE BYE"
+	w.Write([]byte(message))
 }
 
 func handlerServer3(w http.ResponseWriter, r *http.Request) {
@@ -105,6 +109,7 @@ func handlerServer3(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :9999")
+
 }
 
 // func Enroll(servers []*Server, i int, w http.ResponseWriter, r *http.Request) {
