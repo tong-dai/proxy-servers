@@ -5,6 +5,7 @@ import (
 	lb "cos316/td_ec_final_project/load_balancer"
 	"fmt"
 	"net/http"
+	"os"
 	"strings"
 )
 
@@ -92,6 +93,7 @@ func handlerServer1(w http.ResponseWriter, r *http.Request) {
 	} else {
 		message = "Class enrollment revoked for class number " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
+		fmt.Fprintln(os.Stderr, message)
 		w.(http.Flusher).Flush()
 	}
 }
@@ -133,6 +135,7 @@ func handlerServer2(w http.ResponseWriter, r *http.Request) {
 	} else {
 		message = "Class enrollment revoked for class number " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
+		fmt.Fprintln(os.Stderr, message)
 		w.(http.Flusher).Flush()
 	}
 }
@@ -174,6 +177,7 @@ func handlerServer3(w http.ResponseWriter, r *http.Request) {
 	} else {
 		message = "Class enrollment revoked for class number " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
+		fmt.Fprintln(os.Stderr, message)
 		w.(http.Flusher).Flush()
 	}
 

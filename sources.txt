@@ -14,7 +14,7 @@ https://stackoverflow.com/questions/4278430/convert-string-to-integer-type-in-go
 
 https://www.codingrooms.com/blog/golang-int-to-string#:~:text=Convert%20int%20to%20string%20in,work%20seamlessly%20for%20int64%20types.
 
-
+https://stackoverflow.com/questions/29721449/how-can-i-print-to-stderr-in-go-without-using-log
 
 ChatGPT Usage:
 
@@ -291,3 +291,6 @@ Replace <requests_per_second> with the desired rate of requests per second and <
 These tools will simulate multiple clients making requests to your Golang server concurrently, allowing you to measure its performance and identify potential bottlenecks.
 
 Make sure your Golang server is configured to handle the expected load and monitor its resource usage during the test. Additionally, consider using tools like Grafana or Prometheus for more in-depth performance analysis.
+
+
+
