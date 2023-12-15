@@ -20,7 +20,7 @@ var Load_balancer = lb.LB{
 	Servers: []*lb.Server{
 		{ServerURL: "http://localhost:7777", Index: 0, Classes: createServerClassInfo(3, 5)},
 		{ServerURL: "http://localhost:8888", Index: 1, Classes: createServerClassInfo(3, 5)},
-		// {ServerURL: "http://localhost:9999"},
+		{ServerURL: "http://localhost:9999", Index: 1, Classes: createServerClassInfo(3, 5)},
 	},
 }
 func main() {

@@ -60,7 +60,7 @@ func main() {
 
 	go func() {
 		fmt.Println("Server started on: http://localhost:9999")
-		http.ListenAndServe(":9999", server2)
+		http.ListenAndServe(":9999", server3)
 	}()
 
 	//Running Main Server
