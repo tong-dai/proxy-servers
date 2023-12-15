@@ -16,12 +16,6 @@ type EnrollmentInfo struct {
 var load_balancer *lb.LB = lb.GetLB()
 var database *db.DB = db.GetDB()
 
-func processQuery(r *http.Request) *EnrollmentInfo {
-	studentID := r.URL.Query().Get("studentID")
-	classNum := r.URL.Query().Get("classNum")
-	return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
-}
-
 func main() {
 
 	// Create Main Server
@@ -78,90 +72,109 @@ func handlerServer1(w http.ResponseWriter, r *http.Request) {
 
 	var message string
 	class, found := srv.Classes[eInfo.ClassNum]
-	for {
-		if !found {
-			message = "You failed to enroll in class " + eInfo.ClassNum
-			fmt.Fprintln(w, message)
-			w.(http.Flusher).Flush()
-			fmt.Println("-------------------")
-			return
-		} 
-		// write to about successfully enrollment
-		class.Enrollment++
-		success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 0)
-		if success {
-			fmt.Println("successful update of the database")
-		} else {
-			message = "Class enrollment revoked for class number " + eInfo.ClassNum
-			fmt.Fprintln(w, message)
-			w.(http.Flusher).Flush()
-		}
+	if !found || class.Enrollment >= class.MaxEnrollment {
+		message = "You failed to enroll in class " + eInfo.ClassNum
+		fmt.Fprintln(w, message)
+		w.(http.Flusher).Flush()
+		fmt.Println("-------------------")
+		return
+	}
+	// write to about successfully enrollment
+	msg := "successully enrolled in class " + eInfo.ClassNum
+	fmt.Fprintln(w, msg)
+	w.(http.Flusher).Flush()
+	class.Enrollment++
+
+	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 0)
+	if success {
+		fmt.Println("successful update of the database")
+		fmt.Println("----------------------------------")
+	} else {
+		message = "Class enrollment revoked for class number " + eInfo.ClassNum
+		fmt.Fprintln(w, message)
+		w.(http.Flusher).Flush()
 	}
 }
 
 func handlerServer2(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache")
+	w.Header().Set("Connection", "keep-alive")
+	w.Header().Set("Content-Type", "text/event-stream")
+
 	fmt.Println("server1 -----------")
 	// eInfo := processQuery(r)
 	eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: strings.TrimSpace(r.URL.Query().Get("classNum"))}
+
 	srv := load_balancer.Servers[1]
+
 	srv.Lock()
 	defer srv.Unlock()
-	fmt.Printf("classNum: %s\n", eInfo.ClassNum)
+
+	var message string
 	class, found := srv.Classes[eInfo.ClassNum]
-	if !found || class.Enrollment == class.MaxEnrollment {
-		msg := "you cannot enroll in that class"
-		fmt.Println(msg)
-		w.Write([]byte(msg))
+	if !found || class.Enrollment >= class.MaxEnrollment {
+		message = "You failed to enroll in class " + eInfo.ClassNum
+		fmt.Fprintln(w, message)
+		w.(http.Flusher).Flush()
 		fmt.Println("-------------------")
 		return
 	}
+	// write to about successfully enrollment
+	msg := "successully enrolled in class " + eInfo.ClassNum
+	fmt.Fprintln(w, msg)
+	w.(http.Flusher).Flush()
 	class.Enrollment++
-	fmt.Printf("new enrollment %d\n", class.Enrollment)
+
 	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 1)
 	if success {
 		fmt.Println("successful update of the database")
+		fmt.Println("----------------------------------")
 	} else {
-		msg := "you were not enrolled in class " + eInfo.ClassNum
-		w.Write([]byte(msg))
+		message = "Class enrollment revoked for class number " + eInfo.ClassNum
+		fmt.Fprintln(w, message)
+		w.(http.Flusher).Flush()
 	}
-	fmt.Println(eInfo.StudentID, eInfo.ClassNum)
-
-	fmt.Println("Running on Port :8888")
-	message := "byE BYE BYE"
-	w.Write([]byte(message))
-	fmt.Println("-------------------")
 }
 
 func handlerServer3(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache")
+	w.Header().Set("Connection", "keep-alive")
+	w.Header().Set("Content-Type", "text/event-stream")
+
 	fmt.Println("server2 -----------")
 	// eInfo := processQuery(r)
 	eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: strings.TrimSpace(r.URL.Query().Get("classNum"))}
+
 	srv := load_balancer.Servers[2]
+
 	srv.Lock()
 	defer srv.Unlock()
-	fmt.Printf("classNum: %s\n", eInfo.ClassNum)
+
+	var message string
 	class, found := srv.Classes[eInfo.ClassNum]
-	if !found || class.Enrollment == class.MaxEnrollment {
-		msg := "you cannot enroll in that class"
-		fmt.Println(msg)
-		w.Write([]byte(msg))
+	if !found || class.Enrollment >= class.MaxEnrollment {
+		message = "You failed to enroll in class " + eInfo.ClassNum
+		fmt.Fprintln(w, message)
+		w.(http.Flusher).Flush()
 		fmt.Println("-------------------")
 		return
 	}
+	// write to about successfully enrollment
+	msg := "successully enrolled in class " + eInfo.ClassNum
+	fmt.Fprintln(w, msg)
+	w.(http.Flusher).Flush()
 	class.Enrollment++
-	fmt.Printf("new enrollment %d\n", class.Enrollment)
+
 	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 2)
 	if success {
 		fmt.Println("successful update of the database")
+		fmt.Println("----------------------------------")
 	} else {
-		msg := "you were not enrolled in class " + eInfo.ClassNum
-		w.Write([]byte(msg))
+		message = "Class enrollment revoked for class number " + eInfo.ClassNum
+		fmt.Fprintln(w, message)
+		w.(http.Flusher).Flush()
 	}
-	fmt.Println(eInfo.StudentID, eInfo.ClassNum)
-
-	fmt.Println("Running on Port :9999")
-	message := "byE BYE BYE"
-	w.Write([]byte(message))
-	fmt.Println("-------------------")
 
 }

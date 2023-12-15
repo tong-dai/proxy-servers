@@ -81,7 +81,7 @@ func (db *DB) UpdateDB(load_balancer *lb.LB, studentID string, classNumber strin
 
 	if class.enrollment >= class.maxEnrollment {
 		load_balancer.DeleteClass(classNumber)
-		fmt.Printf("something went wrong enrolling student %v in class %v", studentID, classNumber)
+		fmt.Printf("something went wrong enrolling student %v in class %v\n", studentID, classNumber)
 		return false
 	} else {
 		//TODO maybe add a delay here to imitate accessing an actual database?
