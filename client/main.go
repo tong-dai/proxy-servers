@@ -26,10 +26,11 @@ func main() {
 
 	urlWithParams := baseUrl + "?" + params.Encode()
 
-	req, err := http.Get(urlWithParams)
+	resp, err := http.Get(urlWithParams)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
 	}
-	defer req.Body.Close()
+	fmt.Println(resp)
+	defer resp.Body.Close()
 }

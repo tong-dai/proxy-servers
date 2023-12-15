@@ -1,8 +1,11 @@
 package main
 
 import (
+	db "cos316/td_ec_final_project/database"
+	lb "cos316/td_ec_final_project/load_balancer"
 	"fmt"
 	"net/http"
+	"strings"
 )
 
 type EnrollmentInfo struct {
@@ -10,24 +13,16 @@ type EnrollmentInfo struct {
 	ClassNum  string
 }
 
-//	func processQuery(r *http.Request) bool {
-//		studentID, err := strconv.Atoi(r.URL.Query().Get("studentID"))
-//		if err != nil {
-//			fmt.Println("Something went wrong converting studentID to int")
-//		}
-//		classNum, err := strconv.Atoi(r.URL.Query().Get("classNum"))
-//		if err != nil {
-//			fmt.Println("Something went wrong converting classNum to id")
-//		}
-//		// success := db.UpdateDB(studentID, classNum, server.Load_balancer.Servers, server.Load_balancer.GetNextServerIndex())
-//		fmt.Printf("studentID %v", studentID)
-//		fmt.Printf("classNum %v", classNum)
-//		return true
-//		// return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
-//	}
+var load_balancer *lb.LB = lb.GetLB()
+var database *db.DB = db.GetDB()
+
 func processQuery(r *http.Request) *EnrollmentInfo {
 	studentID := r.URL.Query().Get("studentID")
 	classNum := r.URL.Query().Get("classNum")
+	fmt.Println(r.URL.Query())
+	fmt.Println("--------------")
+	fmt.Printf("classnum: %s", classNum)
+	fmt.Printf("studentId: %s", studentID)
 	return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
 }
 
@@ -53,15 +48,18 @@ func main() {
 		http.ListenAndServe(":7777", server1)
 	}()
 
-	go func() {
-		fmt.Println("Server started on: http://localhost:8888")
-		http.ListenAndServe(":8888", server2)
-	}()
+	fmt.Println(load_balancer.Servers[0].Classes["0"].Enrollment)
+	fmt.Println(load_balancer.Servers[0].Classes["0"].MaxEnrollment)
 
-	go func() {
-		fmt.Println("Server started on: http://localhost:9999")
-		http.ListenAndServe(":9999", server3)
-	}()
+	// go func() {
+	// 	fmt.Println("Server started on: http://localhost:8888")
+	// 	http.ListenAndServe(":8888", server2)
+	// }()
+
+	// go func() {
+	// 	fmt.Println("Server started on: http://localhost:9999")
+	// 	http.ListenAndServe(":9999", server3)
+	// }()
 
 	//Running Main Server
 	http.ListenAndServe("localhost:9000", main_server)
@@ -69,14 +67,35 @@ func main() {
 
 func handlerServer1(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Hellor???")
-	enrollmentInfo := processQuery(r)
-	// if success {
-	//     for key, value := range db.DB.C {
-
-	//     }
+	// eInfo := processQuery(r)
+	eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: strings.TrimSpace(r.URL.Query().Get("classNum"))}
+	srv := load_balancer.Servers[0]
+	srv.Lock()
+	defer srv.Unlock()
+	fmt.Println(len(srv.Classes))
+	// for key := range srv.Classes {
+	// 	fmt.Printf("key %s", key)
 	// }
-	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
-	
+	fmt.Printf("enrollment in class 0: %d\n", srv.Classes["0"].Enrollment)
+	fmt.Printf("classNum: %s\n", eInfo.ClassNum)
+	class, found := srv.Classes[eInfo.ClassNum]
+	if !found {
+		msg := "you cannot enroll in class 0"
+		fmt.Println(msg)
+		w.Write([]byte(msg))
+		return
+	}
+	class.Enrollment++
+	fmt.Printf("new enrollment %d\n", class.Enrollment)
+	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 0)
+	if success {
+		fmt.Println("successful update of the database")
+	} else {
+		msg := "you were not enrolled in class " + eInfo.ClassNum
+		w.Write([]byte(msg))
+	}
+	fmt.Println(eInfo.StudentID, eInfo.ClassNum)
+
 	fmt.Println("Running on Port :7777")
 }
 
