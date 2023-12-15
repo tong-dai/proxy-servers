@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"net/http"
 	"net/url"
 	"os"
@@ -31,8 +32,21 @@ func main() {
 		fmt.Println("Error:", err)
 		return
 	}
-	fmt.Println(resp)
 	defer resp.Body.Close()
 
-	
+	respReader := bufio.NewReader(resp.Body)
+    for {
+        line, err := respReader.ReadBytes('\n')
+		
+        if err != nil {
+			if err == io.EOF {
+				break
+			}
+            fmt.Println("Error reading line:", err)
+            break
+        }
+
+        fmt.Print("Received event: ", string(line))
+    }
+
 }
