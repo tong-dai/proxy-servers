@@ -28,3 +28,18 @@ Bytes In      [total, mean]                     35663, 35.66
 Bytes Out     [total, mean]                     0, 0.00
 Success       [ratio]                           100.00%
 Status Codes  [code:count]                      200:1000  
+
+
+running automatic client, 20000 requests, 80 courses, 4 spots per course
+
+default server: 7m53.3215099s
+ours: executionTime: 38.5122229s
+
+
+running automatic client, 20000 requests, 250 courses, 15 spots per course
+ours: executionTime: 3m53.4104781s
+default server: executionTime: 10m53.8714367s
+
+running automatic client, 20000 requests, 1000 courses, 15 spots per course
+ours: 3m54.5559386s
+default server: 9m19.8017998s

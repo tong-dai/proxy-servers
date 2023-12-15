@@ -35,18 +35,18 @@ func main() {
 	defer resp.Body.Close()
 
 	respReader := bufio.NewReader(resp.Body)
-    for {
-        line, err := respReader.ReadBytes('\n')
-		
-        if err != nil {
+	for {
+		line, err := respReader.ReadBytes('\n')
+
+		if err != nil {
 			if err == io.EOF {
 				break
 			}
-            fmt.Println("Error reading line:", err)
-            break
-        }
+			fmt.Println("Error reading line:", err)
+			break
+		}
 
-        fmt.Print("Received event: ", string(line))
-    }
+		fmt.Println("Received event: ", string(line))
+	}
 
 }

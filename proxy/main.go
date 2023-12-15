@@ -62,7 +62,7 @@ func handlerServer1(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Connection", "keep-alive")
 	w.Header().Set("Content-Type", "text/event-stream")
 
-	fmt.Println("server0 -----------")
+	// fmt.Println("server0 -----------")
 	// eInfo := processQuery(r)
 	eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: strings.TrimSpace(r.URL.Query().Get("classNum"))}
 
@@ -77,19 +77,19 @@ func handlerServer1(w http.ResponseWriter, r *http.Request) {
 		message = "You failed to enroll in class " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
 		w.(http.Flusher).Flush()
-		fmt.Println("-------------------")
+		// fmt.Println("-------------------")
 		return
 	}
 	// write to about successfully enrollment
-	msg := "successully enrolled in class " + eInfo.ClassNum
+	msg := "successfully enrolled in class " + eInfo.ClassNum
 	fmt.Fprintln(w, msg)
 	w.(http.Flusher).Flush()
 	class.Enrollment++
 
 	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 0)
 	if success {
-		fmt.Println("successful update of the database")
-		fmt.Println("----------------------------------")
+		// fmt.Println("successful update of the database")
+		// fmt.Println("----------------------------------")
 	} else {
 		message = "Class enrollment revoked for class number " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
@@ -104,7 +104,7 @@ func handlerServer2(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Connection", "keep-alive")
 	w.Header().Set("Content-Type", "text/event-stream")
 
-	fmt.Println("server1 -----------")
+	// fmt.Println("server1 -----------")
 	// eInfo := processQuery(r)
 	eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: strings.TrimSpace(r.URL.Query().Get("classNum"))}
 
@@ -119,7 +119,7 @@ func handlerServer2(w http.ResponseWriter, r *http.Request) {
 		message = "You failed to enroll in class " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
 		w.(http.Flusher).Flush()
-		fmt.Println("-------------------")
+		// fmt.Println("-------------------")
 		return
 	}
 	// write to about successfully enrollment
@@ -130,12 +130,12 @@ func handlerServer2(w http.ResponseWriter, r *http.Request) {
 
 	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 1)
 	if success {
-		fmt.Println("successful update of the database")
-		fmt.Println("----------------------------------")
+		// fmt.Println("successful update of the database")
+		// fmt.Println("----------------------------------")
 	} else {
 		message = "Class enrollment revoked for class number " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
-		fmt.Fprintln(os.Stderr, message)
+		// fmt.Fprintln(os.Stderr, message)
 		w.(http.Flusher).Flush()
 	}
 }
@@ -146,7 +146,7 @@ func handlerServer3(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Connection", "keep-alive")
 	w.Header().Set("Content-Type", "text/event-stream")
 
-	fmt.Println("server2 -----------")
+	// fmt.Println("server2 -----------")
 	// eInfo := processQuery(r)
 	eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: strings.TrimSpace(r.URL.Query().Get("classNum"))}
 
@@ -161,7 +161,7 @@ func handlerServer3(w http.ResponseWriter, r *http.Request) {
 		message = "You failed to enroll in class " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
 		w.(http.Flusher).Flush()
-		fmt.Println("-------------------")
+		// fmt.Println("-------------------")
 		return
 	}
 	// write to about successfully enrollment
@@ -172,12 +172,12 @@ func handlerServer3(w http.ResponseWriter, r *http.Request) {
 
 	success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 2)
 	if success {
-		fmt.Println("successful update of the database")
-		fmt.Println("----------------------------------")
+		// fmt.Println("successful update of the database")
+		// fmt.Println("----------------------------------")
 	} else {
 		message = "Class enrollment revoked for class number " + eInfo.ClassNum
 		fmt.Fprintln(w, message)
-		fmt.Fprintln(os.Stderr, message)
+		// fmt.Fprintln(os.Stderr, message)
 		w.(http.Flusher).Flush()
 	}
 
