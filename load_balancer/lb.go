@@ -28,9 +28,9 @@ type Server struct {
 
 var load_balancer *LB = &LB{
 	Servers: []*Server{
-		{ServerURL: "http://localhost:7777", Index: 0, Classes: createServerClassInfo(80, 3)},
-		{ServerURL: "http://localhost:8888", Index: 1, Classes: createServerClassInfo(80, 3)},
-		{ServerURL: "http://localhost:9999", Index: 2, Classes: createServerClassInfo(80, 3)},
+		{ServerURL: "http://localhost:7777", Index: 0, Classes: createServerClassInfo(80, 5)},
+		{ServerURL: "http://localhost:8888", Index: 1, Classes: createServerClassInfo(80, 5)},
+		{ServerURL: "http://localhost:9999", Index: 2, Classes: createServerClassInfo(80, 5)},
 	},
 	Current: 0,
 }

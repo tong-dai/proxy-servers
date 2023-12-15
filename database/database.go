@@ -33,7 +33,7 @@ var database *DB = &DB{C: createDB(80)}
 func createDB(numClasses int) map[string]*ClassInfo {
 	classInfo := make(map[string]*ClassInfo)
 	for i := 0; i < numClasses; i++ {
-		classInfo[fmt.Sprint(i)] = &ClassInfo{enrollment: 0, maxEnrollment: 3, enrolledIds: make([]string, 0)}
+		classInfo[fmt.Sprint(i)] = &ClassInfo{enrollment: 0, maxEnrollment: 5, enrolledIds: make([]string, 0)}
 	}
 	return classInfo
 }
