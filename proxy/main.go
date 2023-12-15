@@ -94,3 +94,29 @@ func handlerServer3(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :9999")
 }
+
+// func Enroll(servers []*Server, i int, w http.ResponseWriter, r *http.Request) {
+// 	studentID, err := strconv.Atoi(r.URL.Query().Get("studentID"))
+// 	if err != nil {
+// 		log.Panic("something went wrong converting studentID to an int")
+// 	}
+// 	classNumber, err := strconv.Atoi(r.URL.Query().Get("classNumber"))
+// 	if err != nil {
+// 		log.Panic("something went converting classNumber to an int")
+// 	}
+// 	servers[i].Lock()
+// 	defer servers[i].Unlock()
+// 	class, found := servers[i].classes[classNumber]
+// 	if found {
+// 		fmt.Println("found the class")
+// 		class.enrollment++
+// 		success := db.UpdateDB(studentID, classNumber, servers, i)
+// 		if success {
+// 			fmt.Fprintf(w, "Successfully enrolled in %v", classNumber)
+// 		} else {
+// 			fmt.Fprintf(w, "Sorry, you were not enrolled in class %v", classNumber)
+// 		}
+// 	} else {
+// 		fmt.Fprintf(w, "Sorry, you were not actually enrolled in class %v", classNumber)
+// 	}
+// }
