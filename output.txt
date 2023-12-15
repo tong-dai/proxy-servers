@@ -1,0 +1,2668 @@
+Server started on: http://localhost:9000
+0
+5
+Server started on: http://localhost:7777
+Server started on: http://localhost:8888
+Server started on: http://localhost:9999
+server0 -----------
+server2 -----------
+server1 -----------
+server0 -----------
+server2 -----------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+server0 -----------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+something went wrong enrolling student 310 in class 78
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+something went wrong enrolling student 321 in class 72
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 323 in class 79
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+something went wrong enrolling student 42 in class 42
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 44 in class 50
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 45 in class 48
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+something went wrong enrolling student 48 in class 28
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+something went wrong enrolling student 49 in class 45
+server1 -----------
+something went wrong enrolling student 410 in class 14
+server2 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server0 -----------
+something went wrong enrolling student 410 in class 64
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 411 in class 56
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+something went wrong enrolling student 414 in class 26
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 416 in class 10
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+something went wrong enrolling student 417 in class 19
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+something went wrong enrolling student 417 in class 55
+server0 -----------
+something went wrong enrolling student 418 in class 5
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+something went wrong enrolling student 418 in class 52
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 419 in class 16
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 419 in class 61
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 420 in class 17
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 422 in class 11
+server2 -----------
+something went wrong enrolling student 422 in class 27
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 422 in class 67
+server2 -----------
+something went wrong enrolling student 424 in class 7
+server0 -----------
+something went wrong enrolling student 424 in class 29
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 424 in class 15
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+something went wrong enrolling student 424 in class 60
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server0 -----------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+-------------------
+server1 -----------
+length of class.enrolledIds 1
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 1015 in class 12
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 1017 in class 71
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 1019 in class 18
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 1022 in class 51
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 10210 in class 47
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 12 in class 35
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 1210 in class 37
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+server2 -----------
+-------------------
+server2 -----------
+server0 -----------
+-------------------
+-------------------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 7 in class 66
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 8 in class 53
+server2 -----------
+something went wrong enrolling student 8 in class 75
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 9 in class 70
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 11 in class 1
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 13 in class 8
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 14 in class 59
+server2 -----------
+something went wrong enrolling student 14 in class 65
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 16 in class 30
+server0 -----------
+something went wrong enrolling student 16 in class 57
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 17 in class 73
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 18 in class 76
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 20 in class 33
+server1 -----------
+something went wrong enrolling student 20 in class 69
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 21 in class 32
+server2 -----------
+something went wrong enrolling student 21 in class 58
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 23 in class 54
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 31 in class 2
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+something went wrong enrolling student 34 in class 38
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+something went wrong enrolling student 312 in class 49
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 313 in class 74
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 317 in class 39
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 318 in class 25
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 324 in class 46
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 2
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+something went wrong enrolling student 414 in class 4
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 5
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 420 in class 44
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+length of class.enrolledIds 3
+successful update of the database
+----------------------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+length of class.enrolledIds 4
+successful update of the database
+----------------------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+something went wrong enrolling student 120 in class 36
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------
+server2 -----------
+-------------------
+server0 -----------
+-------------------
+server1 -----------
+-------------------

@@ -18,3 +18,13 @@ Bytes In      [total, mean]                     6719, 33.59
 Bytes Out     [total, mean]                     0, 0.00
 Success       [ratio]                           100.00%
 Status Codes  [code:count]                      200:200  
+
+cat targets.txt | vegeta attack -rate=1000 -duration=1s -workers=10 | vegeta report
+
+Requests      [total, rate, throughput]         1000, 1001.00, 1000.69
+Duration      [total, attack, wait]             999.313ms, 999.006ms, 307.75µs
+Latencies     [min, mean, 50, 90, 95, 99, max]  237.875µs, 551.47µs, 470.696µs, 617.161µs, 815.478µs, 4.04ms, 10.403ms
+Bytes In      [total, mean]                     35663, 35.66
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1000  
