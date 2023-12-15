@@ -18,8 +18,8 @@ func main() {
 	classNum, _ := reader.ReadString('\n')
 	classNum = classNum[:len(classNum)-1]
 
-	// baseUrl := "http://localhost:8080/"
-	baseUrl := "http://localhost:9000/"
+	baseUrl := "http://localhost:8080/"
+	// baseUrl := "http://localhost:9000/"
 
 	params := url.Values{}
 	params.Add("studentID", studentID)

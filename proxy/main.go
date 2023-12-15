@@ -7,7 +7,6 @@ import (
 	// lb "cos316/td_ec_final_project/load_balancer"
 	"fmt"
 	"net/http"
-	"strconv"
 )
 
 type EnrollmentInfo struct {
@@ -15,20 +14,25 @@ type EnrollmentInfo struct {
 	ClassNum  string
 }
 
-func processQuery(r *http.Request) bool {
-	studentID, err := strconv.Atoi(r.URL.Query().Get("studentID"))
-	if err != nil {
-		fmt.Println("Something went wrong converting studentID to int")
-	}
-	classNum, err := strconv.Atoi(r.URL.Query().Get("classNum"))
-	if err != nil {
-		fmt.Println("Something went wrong converting classNum to id")
-	}
-	// success := db.UpdateDB(studentID, classNum, server.Load_balancer.Servers, server.Load_balancer.GetNextServerIndex())
-	fmt.Printf("studentID %v", studentID)
-	fmt.Printf("classNum %v", classNum)
-	return true
-	// return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
+//	func processQuery(r *http.Request) bool {
+//		studentID, err := strconv.Atoi(r.URL.Query().Get("studentID"))
+//		if err != nil {
+//			fmt.Println("Something went wrong converting studentID to int")
+//		}
+//		classNum, err := strconv.Atoi(r.URL.Query().Get("classNum"))
+//		if err != nil {
+//			fmt.Println("Something went wrong converting classNum to id")
+//		}
+//		// success := db.UpdateDB(studentID, classNum, server.Load_balancer.Servers, server.Load_balancer.GetNextServerIndex())
+//		fmt.Printf("studentID %v", studentID)
+//		fmt.Printf("classNum %v", classNum)
+//		return true
+//		// return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
+//	}
+func processQuery(r *http.Request) (string, string) {
+	studentID := r.URL.Query().Get("studentID")
+	classNum := r.URL.Query().Get("ClassNumber")
+	return studentID, classNum
 }
 
 func main() {
@@ -68,28 +72,48 @@ func main() {
 }
 
 func handlerServer1(w http.ResponseWriter, r *http.Request) {
-	success := processQuery(r)
+	fmt.Println("Hellor???")
+	studentId, classNum := processQuery(r)
 	// if success {
 	//     for key, value := range db.DB.C {
 
 	//     }
 	// }
 	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
-	fmt.Println(success)
+	fmt.Println(studentId)
+	fmt.Println(classNum)
 	fmt.Println("Running on Port :7777")
 }
 
 func handlerServer2(w http.ResponseWriter, r *http.Request) {
-	success := processQuery(r)
-	fmt.Println(success)
+	fmt.Println("Hellor???")
+
+	studentId, classNum := processQuery(r)
+	// if success {
+	//     for key, value := range db.DB.C {
+
+	//     }
+	// }
+	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
+	fmt.Println(studentId)
+	fmt.Println(classNum)
 
 	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :8888")
 }
 
 func handlerServer3(w http.ResponseWriter, r *http.Request) {
-	success := processQuery(r)
-	fmt.Println(success)
+	fmt.Println("Hellor???")
+
+	studentId, classNum := processQuery(r)
+	// if success {
+	//     for key, value := range db.DB.C {
+
+	//     }
+	// }
+	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
+	fmt.Println(studentId)
+	fmt.Println(classNum)
 
 	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :9999")

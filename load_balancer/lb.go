@@ -1,4 +1,5 @@
 package lb
+
 import (
 	"fmt"
 	"net/http"
@@ -8,9 +9,9 @@ import (
 )
 
 type LB struct {
-	Servers		[]*Server
-	Current		int
-	mu			sync.Mutex
+	Servers []*Server
+	Current int
+	mu      sync.Mutex
 }
 
 type CacheClassInfo struct {
@@ -25,8 +26,7 @@ type Server struct {
 	Classes map[int]*CacheClassInfo
 }
 
-
-var lb *LB = &LB{
+var load_balancer *LB = &LB{
 	Servers: []*Server{
 		{ServerURL: "http://localhost:7777", Index: 0, Classes: createServerClassInfo(3, 5)},
 		{ServerURL: "http://localhost:8888", Index: 1, Classes: createServerClassInfo(3, 5)},
@@ -34,7 +34,6 @@ var lb *LB = &LB{
 	},
 	Current: 0,
 }
-
 
 func createServerClassInfo(numClasses int, capacity int) map[int]*CacheClassInfo {
 	classes := make(map[int]*CacheClassInfo)
@@ -44,21 +43,21 @@ func createServerClassInfo(numClasses int, capacity int) map[int]*CacheClassInfo
 	return classes
 }
 
-func (lb *LB) GetLB() *LB {
-	return lb
+func GetLB() *LB {
+	return load_balancer
 }
 
-func (lb *LB) GetNextServerIndex() int {
+func (lb *LB) GetNextServer() *Server {
 	lb.mu.Lock()
 	defer lb.mu.Unlock()
 
 	lb.Current = (lb.Current + 1) % len(lb.Servers)
-    return lb.Current
+	return lb.Servers[lb.Current]
 }
 
 func (lb *LB) HandleRequest(w http.ResponseWriter, r *http.Request) {
-
-	server := lb.Servers[lb.GetNextServerIndex()]
+	fmt.Println("Do we get to handle request?")
+	server := lb.GetNextServer()
 
 	serverURL, err := url.Parse(server.ServerURL)
 	if err != nil {
