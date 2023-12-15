@@ -19,10 +19,6 @@ var database *db.DB = db.GetDB()
 func processQuery(r *http.Request) *EnrollmentInfo {
 	studentID := r.URL.Query().Get("studentID")
 	classNum := r.URL.Query().Get("classNum")
-	fmt.Println(r.URL.Query())
-	fmt.Println("--------------")
-	fmt.Printf("classnum: %s", classNum)
-	fmt.Printf("studentId: %s", studentID)
 	return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
 }
 
@@ -74,36 +70,27 @@ func handlerServer1(w http.ResponseWriter, r *http.Request) {
 	
 	srv.Lock()
 	defer srv.Unlock()
-	
-	fmt.Println(len(srv.Classes))
 
-
+	var message string
 	class, found := srv.Classes[eInfo.ClassNum]
 	for {
 		if !found {
-			msg := "you cannot enroll in class 0"
-			fmt.Println(msg)
+			message = "You failed to enroll in class " + eInfo.ClassNum
+			fmt.Fprintln(w, message)
 			w.(http.Flusher).Flush()
 			return
+		} 
+		// write to about successfully enrollment
+		class.Enrollment++
+		success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 0)
+		if success {
+			fmt.Println("successful update of the database")
+		} else {
+			message = "Class enrollment revoked for class number " + eInfo.ClassNum
+			fmt.Fprintln(w, message)
+			w.(http.Flusher).Flush()
 		}
 	}
-	
-
-
-	// class.Enrollment++
-	// fmt.Printf("new enrollment %d\n", class.Enrollment)
-	// success := database.UpdateDB(load_balancer, eInfo.StudentID, eInfo.ClassNum, 0)
-	// if success {
-	// 	fmt.Println("successful update of the database")
-	// } else {
-	// 	msg := "you were not enrolled in class " + eInfo.ClassNum
-	// 	w.Write([]byte(msg))
-	// }
-	// fmt.Println(eInfo.StudentID, eInfo.ClassNum)
-
-	// fmt.Println("Running on Port :7777")
-	// message := "byE BYE BYE"
-	// w.Write([]byte(message))
 }
 
 func handlerServer2(w http.ResponseWriter, r *http.Request) {
