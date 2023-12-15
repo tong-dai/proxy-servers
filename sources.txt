@@ -150,3 +150,5 @@ func main() {
 In this example, fmt.Fprintf is used to format the string "Hello, %s!" with the value of name ("John" in this case), and the formatted string is then written to the http.ResponseWriter. This allows you to include dynamic content in your response.
 
 When you visit "http://localhost:8080/hello" in your browser, you should see "Hello, John!" as the response. You can modify the name variable or incorporate other dynamic data as needed for your application.
+
+https://www.freecodecamp.org/news/iteration-in-golang/#:~:text=You%20can%20iterate%20through%20a,index%20and%20its%20corresponding%20value.&text=In%20the%20code%20above%2C%20we%20defined%20a%20map%20storing%20the,and%20values%20using%20the%20for..
