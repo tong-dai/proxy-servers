@@ -28,7 +28,7 @@ type DB struct {
 	sync.Mutex
 }
 
-var database *DB = &DB{C: createDB(4)}
+var database *DB = &DB{C: createDB(80)}
 
 func createDB(numClasses int) map[string]*ClassInfo {
 	classInfo := make(map[string]*ClassInfo)
