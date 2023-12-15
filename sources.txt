@@ -153,3 +153,141 @@ In this example, fmt.Fprintf is used to format the string "Hello, %s!" with the 
 When you visit "http://localhost:8080/hello" in your browser, you should see "Hello, John!" as the response. You can modify the name variable or incorporate other dynamic data as needed for your application.
 
 https://www.freecodecamp.org/news/iteration-in-golang/#:~:text=You%20can%20iterate%20through%20a,index%20and%20its%20corresponding%20value.&text=In%20the%20code%20above%2C%20we%20defined%20a%20map%20storing%20the,and%20values%20using%20the%20for..
+I'm writing a server handler method in golang and I'm attempting to get the encoded URL parameters from r *http.Request and it seems like it is being retrieved correctly but when I try to use it as a key in a map, it doesn't find the entry matching that key. Why is that? I have checked and classNum is "0".
+
+eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: r.URL.Query().Get("classNum")}
+	srv := load_balancer.Servers[0]
+	srv.Lock()
+	defer srv.Unlock()
+	fmt.Println(len(srv.Classes))
+	// for key := range srv.Classes {
+	// 	fmt.Printf("key %s", key)
+	// }
+	fmt.Printf("enrollment in class 0: %d\n", srv.Classes["0"].Enrollment)
+	fmt.Printf("classNum: %s\n", eInfo.ClassNum)
+	class, found := srv.Classes[eInfo.ClassNum]
+
+ChatGPT
+The issue you're encountering might be related to the fact that the URL parameters are decoded as strings, and the keys in your map might be of a different type. In Go, the keys in a map must be of the same type, and comparing different types directly may result in unexpected behavior.
+
+In your case, it seems like eInfo.ClassNum is of type string, but the keys in srv.Classes might be of a different type. To resolve this issue, you should convert the key to the correct type before using it to access the map.
+
+Assuming that the keys in srv.Classes are of type int, you can convert eInfo.ClassNum to an integer using the strconv.Atoi function. Here's an updated version of your code:
+
+go
+Copy code
+import "strconv"
+
+// ...
+
+eInfo := &EnrollmentInfo{StudentID: r.URL.Query().Get("studentID"), ClassNum: r.URL.Query().Get("classNum")}
+srv := load_balancer.Servers[0]
+srv.Lock()
+defer srv.Unlock()
+fmt.Println(len(srv.Classes))
+
+// Convert eInfo.ClassNum to int
+classNum, err := strconv.Atoi(eInfo.ClassNum)
+if err != nil {
+    // Handle the error (e.g., log it or return an error response)
+    fmt.Println("Error converting classNum to int:", err)
+    // Handle the error and return or log it
+    return
+}
+
+// Access the map using the converted key
+class, found := srv.Classes[classNum]
+
+// Check if the key was found
+if found {
+    fmt.Printf("enrollment in class %d: %d\n", classNum, class.Enrollment)
+} else {
+    fmt.Printf("Class with classNum %d not found\n", classNum)
+}
+This code snippet assumes that the keys in srv.Classes are of type int. Adjust the type conversion accordingly based on the actual type of your map keys.
+
+User
+the map key type is string - in the code snippet I showed you, the third line from the bottom "fmt.Printf("enrollment in class 0: %d\n", srv.Classes["0"].Enrollment" prints the expected value (i.e. it is found)
+ChatGPT
+If the keys in srv.Classes are of type string, and eInfo.ClassNum is also a string, then the issue may be related to leading or trailing whitespaces, or differences in the actual values. When comparing strings, even a small difference such as a whitespace can cause the comparison to fail.
+
+Here are a few things you can check:
+
+Trim the ClassNum value:
+
+go
+Copy code
+class, found := srv.Classes[strings.TrimSpace(eInfo.ClassNum)]
+Check for leading/trailing whitespaces in the map keys:
+Ensure that the keys stored in srv.Classes do not have leading or trailing whitespaces. If they do, you should trim them before comparison.
+
+go
+Copy code
+// Assuming keys in srv.Classes may have leading/trailing whitespaces
+cleanClassNum := strings.TrimSpace(eInfo.ClassNum)
+class, found := srv.Classes[cleanClassNum]
+Print the actual map keys and the ClassNum value:
+
+go
+Copy code
+for key := range srv.Classes {
+    fmt.Printf("Map key: %q\n", key)
+}
+
+fmt.Printf("ClassNum value: %q\n", eInfo.ClassNum)
+This can help you visually inspect the keys and identify any differences.
+
+If none of these suggestions solve the issue, you might want to print the actual keys and values in srv.Classes and the value of eInfo.ClassNum for further debugging:
+
+go
+Copy code
+for key, value := range srv.Classes {
+    fmt.Printf("Map key: %q, Enrollment: %d\n", key, value.Enrollment)
+}
+
+fmt.Printf("ClassNum value: %q\n", eInfo.ClassNum)
+This should help you identify any discrepancies in the data and understand why the key is not being found in the map.
+
+ am creating a golang server complete with three proxy servers and a load balancer and I want to test it by having multiple clients make requests to the server at one time. How can I do that?
+
+ChatGPT
+To test your Golang server with multiple clients making requests simultaneously, you can use tools designed for load testing. One popular tool is Apache Benchmark (ab), which is a command-line tool for benchmarking your HTTP server. Another option is Vegeta, a versatile and lightweight HTTP load testing tool.
+
+Here's a brief overview of how you can use both tools:
+
+Using Apache Benchmark (ab):
+Install Apache Benchmark:
+
+csharp
+Copy code
+sudo apt-get install apache2-utils   # For Debian/Ubuntu
+Run Apache Benchmark:
+
+bash
+Copy code
+ab -n <total_requests> -c <concurrent_requests> http://your-server-url
+Replace <total_requests> with the total number of requests you want to make, <concurrent_requests> with the number of concurrent requests, and http://your-server-url with the actual URL of your Golang server.
+
+Using Vegeta:
+Install Vegeta:
+
+bash
+Copy code
+go get -u github.com/tsenart/vegeta
+Create a Target File (e.g., targets.txt):
+
+plaintext
+Copy code
+GET http://your-server-url
+Replace http://your-server-url with the actual URL of your Golang server.
+
+Run Vegeta:
+
+bash
+Copy code
+cat targets.txt | vegeta attack -rate=<requests_per_second> -duration=<test_duration> | vegeta report
+Replace <requests_per_second> with the desired rate of requests per second and <test_duration> with the duration of the test.
+
+These tools will simulate multiple clients making requests to your Golang server concurrently, allowing you to measure its performance and identify potential bottlenecks.
+
+Make sure your Golang server is configured to handle the expected load and monitor its resource usage during the test. Additionally, consider using tools like Grafana or Prometheus for more in-depth performance analysis.

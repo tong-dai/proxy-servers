@@ -1,0 +1,21 @@
+GET http://your-server-url?studentID=0&classNum=0
+GET http://your-server-url?studentID=0&classNum=1
+GET http://your-server-url?studentID=0&classNum=2
+GET http://your-server-url?studentID=0&classNum=3
+GET http://your-server-url?studentID=1&classNum=0
+GET http://your-server-url?studentID=1&classNum=1
+GET http://your-server-url?studentID=1&classNum=2
+GET http://your-server-url?studentID=1&classNum=3
+GET http://your-server-url?studentID=2&classNum=0
+GET http://your-server-url?studentID=2&classNum=1
+GET http://your-server-url?studentID=2&classNum=2
+GET http://your-server-url?studentID=2&classNum=3
+GET http://your-server-url?studentID=3&classNum=0
+GET http://your-server-url?studentID=3&classNum=1
+GET http://your-server-url?studentID=3&classNum=2
+GET http://your-server-url?studentID=3&classNum=3
+
+GET http://your-server-url?studentID=4&classNum=0
+GET http://your-server-url?studentID=4&classNum=1
+GET http://your-server-url?studentID=4&classNum=2
+GET http://your-server-url?studentID=4&classNum=3
