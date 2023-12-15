@@ -28,12 +28,12 @@ type DB struct {
 	sync.Mutex
 }
 
-var database *DB = &DB{C: createDB(3)}
+var database *DB = &DB{C: createDB(4)}
 
 func createDB(numClasses int) map[string]*ClassInfo {
 	classInfo := make(map[string]*ClassInfo)
 	for i := 0; i < numClasses; i++ {
-		classInfo[fmt.Sprint(i)] = &ClassInfo{enrollment: 0, maxEnrollment: 1, enrolledIds: make([]string, 0)}
+		classInfo[fmt.Sprint(i)] = &ClassInfo{enrollment: 0, maxEnrollment: 3, enrolledIds: make([]string, 0)}
 	}
 	return classInfo
 }
