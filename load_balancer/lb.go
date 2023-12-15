@@ -85,7 +85,6 @@ func (lb *LB) GetNextServer() *Server {
 }
 
 func (lb *LB) HandleRequest(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Do we get to handle request?")
 	server := lb.GetNextServer()
 
 	serverURL, err := url.Parse(server.ServerURL)
