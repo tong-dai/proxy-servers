@@ -28,9 +28,9 @@ type Server struct {
 
 var load_balancer *LB = &LB{
 	Servers: []*Server{
-		{ServerURL: "http://localhost:7777", Index: 0, Classes: createServerClassInfo(3, 5)},
-		// {ServerURL: "http://localhost:8888", Index: 1, Classes: createServerClassInfo(3, 5)},
-		// {ServerURL: "http://localhost:9999", Index: 2, Classes: createServerClassInfo(3, 5)},
+		{ServerURL: "http://localhost:7777", Index: 0, Classes: createServerClassInfo(3, 1)},
+		{ServerURL: "http://localhost:8888", Index: 1, Classes: createServerClassInfo(3, 1)},
+		{ServerURL: "http://localhost:9999", Index: 2, Classes: createServerClassInfo(3, 5)},
 	},
 	Current: 0,
 }
@@ -50,12 +50,12 @@ func GetLB() *LB {
 func (lb *LB) DeleteClass(classNum string) {
 	servers := lb.Servers
 	for i := 0; i < len(servers); i++ {
-		servers[i].Lock()
+		// servers[i].Lock()
 		_, found := servers[i].Classes[classNum]
 		if found {
 			delete(servers[i].Classes, classNum)
 		}
-		servers[i].Unlock()
+		// servers[i].Unlock()
 	}
 }
 

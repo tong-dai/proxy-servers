@@ -33,7 +33,7 @@ var database *DB = &DB{C: createDB(3)}
 func createDB(numClasses int) map[string]*ClassInfo {
 	classInfo := make(map[string]*ClassInfo)
 	for i := 0; i < numClasses; i++ {
-		classInfo[fmt.Sprint(i)] = &ClassInfo{enrollment: 0, maxEnrollment: 5, enrolledIds: make([]string, 0)}
+		classInfo[fmt.Sprint(i)] = &ClassInfo{enrollment: 0, maxEnrollment: 1, enrolledIds: make([]string, 0)}
 	}
 	return classInfo
 }
@@ -78,14 +78,15 @@ func (db *DB) UpdateDB(load_balancer *lb.LB, studentID string, classNumber strin
 	db.Lock()
 	defer db.Unlock()
 	class := db.C[classNumber]
-	fmt.Println("do we get into updateDB?")
-	if class.enrollment == class.maxEnrollment {
-		defer load_balancer.DeleteClass(classNumber)
+
+	if class.enrollment >= class.maxEnrollment {
+		load_balancer.DeleteClass(classNumber)
 		fmt.Printf("something went wrong enrolling student %v in class %v", studentID, classNumber)
 		return false
 	} else {
 		//TODO maybe add a delay here to imitate accessing an actual database?
 		class.enrolledIds = append(class.enrolledIds, studentID)
+		class.enrollment++
 		fmt.Printf("length of class.enrolledIds %d\n", len(class.enrolledIds))
 		// TODO figure out when to call this method => how often?
 		// defer load_balancer.UpdateServer(classNumber, class.enrollment, serverIndex)
