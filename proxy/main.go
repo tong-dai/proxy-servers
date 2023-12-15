@@ -1,10 +1,6 @@
 package main
 
 import (
-	// db "cos316/td_ec_final_project/database"
-	// server "cos316/td_ec_final_project/load_balancer_server"
-
-	// lb "cos316/td_ec_final_project/load_balancer"
 	"fmt"
 	"net/http"
 )
@@ -29,10 +25,10 @@ type EnrollmentInfo struct {
 //		return true
 //		// return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
 //	}
-func processQuery(r *http.Request) (string, string) {
+func processQuery(r *http.Request) *EnrollmentInfo {
 	studentID := r.URL.Query().Get("studentID")
-	classNum := r.URL.Query().Get("ClassNumber")
-	return studentID, classNum
+	classNum := r.URL.Query().Get("classNum")
+	return &EnrollmentInfo{StudentID: studentID, ClassNum: classNum}
 }
 
 func main() {
@@ -73,49 +69,41 @@ func main() {
 
 func handlerServer1(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Hellor???")
-	studentId, classNum := processQuery(r)
+	enrollmentInfo := processQuery(r)
 	// if success {
 	//     for key, value := range db.DB.C {
 
 	//     }
 	// }
-	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
-	fmt.Println(studentId)
-	fmt.Println(classNum)
+	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
+	
 	fmt.Println("Running on Port :7777")
 }
 
 func handlerServer2(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Hellor???")
 
-	studentId, classNum := processQuery(r)
+	enrollmentInfo := processQuery(r)
 	// if success {
 	//     for key, value := range db.DB.C {
 
 	//     }
 	// }
-	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
-	fmt.Println(studentId)
-	fmt.Println(classNum)
-
-	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
+	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :8888")
 }
 
 func handlerServer3(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Hellor???")
 
-	studentId, classNum := processQuery(r)
+	enrollmentInfo := processQuery(r)
 	// if success {
 	//     for key, value := range db.DB.C {
 
 	//     }
 	// }
-	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
-	fmt.Println(studentId)
-	fmt.Println(classNum)
 
-	// fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
+	fmt.Println(enrollmentInfo.StudentID, enrollmentInfo.ClassNum)
 	fmt.Println("Running on Port :9999")
 }
 

@@ -19,12 +19,10 @@ func main() {
 	classNum = classNum[:len(classNum)-1]
 
 	baseUrl := "http://localhost:8080/"
-	// baseUrl := "http://localhost:9000/"
 
 	params := url.Values{}
 	params.Add("studentID", studentID)
 	params.Add("classNum", classNum)
-	params.Encode()
 
 	urlWithParams := baseUrl + "?" + params.Encode()
 
